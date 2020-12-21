@@ -10,7 +10,7 @@ let songNumber = 0
 let CurrentlyPlaying = false
 let audio = null
 
-// Load A Song - Based on example provided on Slack
+// Load A Song - Based on codepen array example provided on Slack (see notes/attribution in readme.md) 
 let PlaySong = function(pickASong) {
 	let song = playlist[pickASong] // The song you want to play from the Array above
 	if (audio) { // means it's not null (something was previously loaded)
@@ -89,7 +89,7 @@ let volUpBtn = function() {
     }
     else {
         audio.volume += 0.1
-        document.getElementById("currentVol").innerHTML = `Volume: ${Math.round(audio.volume * 100)}%` //Round Volume Integer to % value
+        document.getElementById("currentVol").innerHTML = `Volume: ${Math.round(audio.volume * 100)}%` //Round Volume Integer to % value - Makes it easy for the user to read/interpret
     }
 }
 let volumeUpButton = document.querySelector(`#volumeUp`);
@@ -98,15 +98,15 @@ volumeUpButton.addEventListener(`click`, volUpBtn)
 //Volume down button 
 let volDownBtn = function() {
     if (audio.volume <= 0.1) {
-        document.getElementById("currentVol").innerHTML = `Volume: ${Math.round(audio.volume * 100)}%` //Round Volume Integer to % value
+        document.getElementById("currentVol").innerHTML = `Volume: ${Math.round(audio.volume * 100)}%` //Round Volume Integer to % value - Makes it easy for the user to read/interpret
     }
     else {
         audio.volume -= 0.1
-        document.getElementById("currentVol").innerHTML = `Volume: ${Math.round(audio.volume * 100)}%` //Round Volume Integer to % value
+        document.getElementById("currentVol").innerHTML = `Volume: ${Math.round(audio.volume * 100)}%` //Round Volume Integer to % value - Makes it easy for the user to read/interpret
     }
 }
 let volumeDownButton = document.querySelector(`#volumeDown`);
 volumeDownButton.addEventListener(`click`, volDownBtn)
 
-//Start Playlist on Track 1
+//Start Playlist on Track 1 (start of the array)
 PlaySong(0)
