@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Audio Player Test</title>
+</head>
+<body>
+    <div class="playerbox center">
+        <h1>ChillPod v1.0</h1>
+        <p>Beats to End The Semester To</p>
+        <div><img src="img/image0.jpg" alt="error" id="trackImage" class="trackImg"></div> <!--If you see the default image after loading, something broke-->
+        <p class="songInfo"><span id="songTitle">title</span> - <span id="songArtist">Artist</span></p>
+        <div class="settings">
+            <img src="img/Last.svg" alt="previous track" class="trackBtn" id="lastTrack">
+            <img src="img/Play.svg" alt="play" class="play" id="playPause">
+            <img src="img/Pause.svg" alt="pause" class="pause" id="playPause">
+            <img src="img/Next.svg" alt="next track" class="trackBtn" id="nextTrack">
+        </div>
+        <div class="volumeBlock">
+            <img src="img/Minus.svg" alt="volume down" class="volumeBtn" id="volumeDown">
+            <span id="currentVol" class="volText">Volume 100%</span>
+            <img src="img/Plus.svg" alt="volume up" class="volumeBtn" id="volumeUp">
+        </div>
+        <br>
+        <img src="img/Replay.svg" alt="replay" class="replayBtn" id="restart"> 
+    </div>
+    <audio id="track1" src="audio/Track1.mp3"></audio>
+</body>
+<script src="script.js"></script>
+</html>

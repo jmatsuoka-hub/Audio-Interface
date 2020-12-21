@@ -1,0 +1,85 @@
+body {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-color: rgb(217, 250, 244);
+    min-height: 100vh;
+    margin: 0; 
+}
+
+.trackImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.playerbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', sans-serif;
+    display: block;
+    margin: auto;
+    text-align: center;
+    height: 800px;
+    width: 400px;
+    border: 4px solid rgb(105, 105, 105);
+    border-radius: 25px;
+    background-color: rgb(245, 245, 245);
+
+}
+
+.songInfo {
+    font-size: 1.2em;
+}
+.settings {
+    display: inline;
+}
+
+.trackBtn {
+    width: 80px ;
+    margin-bottom: 40px;
+}
+
+.play {
+    display:;
+    width: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.pause {
+    display: none;
+    width: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.volumeBlock {
+    display: inline-flex;
+}
+
+.volumeBtn {
+    width: 50px ;
+    margin-bottom: 15px;
+}
+
+.volText {
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.replayBtn {
+    width: 45px ;
+    margin-bottom: 40px;
+}
