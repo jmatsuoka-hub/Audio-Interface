@@ -57,13 +57,11 @@ let playBtn = function() {
 	if (CurrentlyPlaying) {
 		audio.pause()
         CurrentlyPlaying = false
-        //document.getElementById("playPause").innerHTML = `Play`;
         document.querySelector(`.play`).style.display= "inline"
         document.querySelector(`.pause`).style.display= "none"
 	} else {
 		audio.play()
         CurrentlyPlaying = true
-        //document.getElementById("playPause").innerHTML = `Pause`;
         document.querySelector(`.pause`).style.display= "inline"
         document.querySelector(`.play`).style.display= "none"
 	}
@@ -79,7 +77,7 @@ let restartBtn = function() {
     audio.play()
 }
 
-let restartButton = document.querySelector(`#restart`);
+let restartButton = document.querySelector(`#restart`)
 restartButton.addEventListener(`click`, restartBtn)
 
 //Volume up button
@@ -92,7 +90,7 @@ let volUpBtn = function() {
         document.getElementById("currentVol").innerHTML = `Volume: ${Math.round(audio.volume * 100)}%` //Round Volume Integer to % value - Makes it easy for the user to read/interpret
     }
 }
-let volumeUpButton = document.querySelector(`#volumeUp`);
+let volumeUpButton = document.querySelector(`#volumeUp`)
 volumeUpButton.addEventListener(`click`, volUpBtn)
 
 //Volume down button 
@@ -105,7 +103,7 @@ let volDownBtn = function() {
         document.getElementById("currentVol").innerHTML = `Volume: ${Math.round(audio.volume * 100)}%` //Round Volume Integer to % value - Makes it easy for the user to read/interpret
     }
 }
-let volumeDownButton = document.querySelector(`#volumeDown`);
+let volumeDownButton = document.querySelector(`#volumeDown`)
 volumeDownButton.addEventListener(`click`, volDownBtn)
 
 //Start Playlist on Track 1 (start of the array)
